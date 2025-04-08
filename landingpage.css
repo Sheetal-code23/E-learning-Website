@@ -1,0 +1,292 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.logo {
+    width: 150px;
+    animation: rotate 4s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+}
+}
+header {
+    background-color: #87CEEB;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: #333;
+    margin: 20px;
+}
+
+.auth-buttons button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.4s;
+    border-radius: 5px;
+}
+
+.login {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+.register {
+    background-color: #f44336;
+    color: #fff;
+}
+
+/* Hover effect */
+.auth-buttons button::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(255, 255, 255, 0.3);
+    transition: all 0.4s ease-in-out;
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+}
+
+.auth-buttons button:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+
+.auth-buttons button:hover {
+color: #fff;
+}
+
+.login {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+.register {
+    background-color: #f44336;
+    color: #fff;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #e2f0fc;
+}
+
+.hero h2 {
+    margin: 0;
+    font-size: 36px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #666;
+}
+
+.hero-buttons button {
+    margin: 10px;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.4s;
+}
+
+.start-learning {
+    background-color: #007BFF;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.watch-video {
+    background-color: #ffc107;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Hover effect */
+.hero-buttons button::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(255, 255, 255, 0.3);
+    transition: all 0.4s ease-in-out;
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+}
+
+.hero-buttons button:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+
+.hero-buttons button:hover {
+color: #fff;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+.feature {
+    text-align: center;
+}
+
+.feature .icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.categories {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f7f7f7;
+}
+
+.search-bar {
+    margin: 20px 0;
+}
+
+.search-bar input {
+    padding: 10px;
+    width: 200px;
+}
+
+.search-bar button {
+    padding: 10px;
+}
+
+.category-buttons button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.about {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.about h2 h3 h4{
+    font-size: 28px;
+}
+
+.about p {
+    color: #666;
+}
+
+.img {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+.learn-more {
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    background-color: #28a745;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.success-stories {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+footer {
+    background-color: skyblue;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    width: 100%;
+}
+
+footer p {
+margin: 0;
+}
+
+.image {
+    width: 500px;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 10px;
+}
